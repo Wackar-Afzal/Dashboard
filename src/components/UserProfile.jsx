@@ -30,7 +30,7 @@ const UserProfile = () => {
         <div>
           <p className="font-semibold text-xl dark:text-gray-200"> Nofil Bashir </p>
           <p className="text-gray-500 text-sm dark:text-gray-400">  Administrator   </p>
-          <a className="text-gray-500 text-sm font-semibold dark:text-gray-400" href='mailto:nofil.bashiir@gmail.com'> nofil.bashiir@gmail.com </a>
+          <p className="text-gray-500 text-sm font-semibold dark:text-gray-400"> nofil.bashir </p>
         </div>
       </div>
       <div>
