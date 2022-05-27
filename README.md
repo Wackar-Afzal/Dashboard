@@ -1,1 +1,1 @@
-# react front-end with tailwind and synfusion
+# react front-end using with tailwind and synfusion
