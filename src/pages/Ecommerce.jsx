@@ -307,7 +307,6 @@ const Ecommerce = () => {
               src={product9}
               alt=""
             />
-         
           </div>
         </div>
       </div>
