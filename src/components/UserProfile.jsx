@@ -43,7 +43,6 @@ const UserProfile = () => {
             >
               {item.icon}
             </button>
-
             <div>
               <p className="font-semibold dark:text-gray-200 ">{item.title}</p>
               <p className="text-gray-500 text-sm dark:text-gray-400"> {item.desc} </p>

@@ -4,7 +4,9 @@ import { IoIosMore } from 'react-icons/io';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 import { GoPrimitiveDot } from "react-icons/go";
 import { Stacked, Pie, Button, LineChart, SparkLine } from '../components';
-import { earningData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
+import { earningData,  recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
+// import { earningData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
+
 import { useStateContext } from '../contexts/ContextProvider';
 
 const DropDown = ({ currentMode }) => (
@@ -227,7 +229,6 @@ const Home = () => {
                     <p className="text-sm text-gray-400">{item.desc}</p>
                   </div>
                 </div>
-
                 <p className={`text-${item.pcColor}`}>{item.amount}</p>
               </div>
             ))}
@@ -235,10 +236,7 @@ const Home = () => {
               <SparkLine currentColor={currentColor} id="area-sparkLine" height="160px" type="Area" data={SparklineAreaData} width="320" color="rgb(242, 252, 253)" />
             </div> */}
           </div>
-
         </div>
-       
-       
       </div>
     </div>
   );
