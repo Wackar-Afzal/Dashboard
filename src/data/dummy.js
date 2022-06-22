@@ -1,13 +1,11 @@
 import React from 'react';
 
-import { AiOutlineCalendar,  AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
+import { AiOutlineCalendar, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
 // import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
-
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsKanban, BsBarChart, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 // import { BiColorFill ,BiTime} from 'react-icons/bi';
-import { BiTime} from 'react-icons/bi';
-
+import { BiTime } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
@@ -26,7 +24,6 @@ import product4 from './product4.jpg';
 import product5 from './product5.jpg';
 import product6 from './product6.jpg';
 import product7 from './product7.jpg';
-
 export const gridOrderImage = (props) => (
   <div>
     <img
@@ -36,7 +33,6 @@ export const gridOrderImage = (props) => (
     />
   </div>
 );
-
 export const gridOrderStatus = (props) => (
   <button
     type="button"
@@ -46,21 +42,17 @@ export const gridOrderStatus = (props) => (
     {props.Status}
   </button>
 );
-
 export const kanbanGrid = [
   { headerText: 'To Do',
     keyField: 'Open',
     allowToggle: true },
-
   { headerText: 'In Progress',
     keyField: 'InProgress',
     allowToggle: true },
-
   { headerText: 'Testing',
     keyField: 'Testing',
     allowToggle: true,
     isExpanded: false },
-
   { headerText: 'Done',
     keyField: 'Close',
     allowToggle: true },
@@ -75,7 +67,6 @@ const gridEmployeeProfile = (props) => (
     <p>{props.Name}</p>
   </div>
 );
-
 const gridEmployeeCountry = (props) => (
   <div className="flex items-center justify-center gap-2">
     <GrLocation />
@@ -87,39 +78,27 @@ export const EditorData = () => (
     <h3>
       Try React
       React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
-
       Online Playgrounds
       If you’re interested in playing around with React, you can use an online code playground. Try a Hello World template on CodePen, CodeSandbox, or Stackblitz.
-
       If you prefer to use your own text editor, you can also download this HTML file, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.
-
       Add React to a Website
       You can add React to an HTML page in one minute. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
-
       Create a New React App
       When starting a React project, a simple HTML page with script tags might still be the best option. It only takes a minute to set up!
-
       As your application grows, you might want to consider a more integrated setup. There are several JavaScript toolchains we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem. Learn how.
-
       Learn React
       People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful.
-
       If you prefer to learn by doing, start with our practical tutorial.
       If you prefer to learn concepts step by step, start with our guide to main concepts.
       Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.
-
       First Examples
       The React homepage contains a few small React examples with a live editor. Even if you don’t know anything about React yet, try changing their code and see how it affects the result.
-
       React for Beginners
       If you feel that the React documentation goes at a faster pace than you’re comfortable with, check out this overview of React by Tania Rascia. It introduces the most important React concepts in a detailed, beginner-friendly way. Once you’re done, give the documentation another try!
-
       React for Designers
       If you’re coming from a design background, these resources are a great place to get started.
-
       JavaScript Resources
       The React documentation assumes some familiarity with programming in the JavaScript language. You don’t have to be an expert, but it’s harder to learn both React and JavaScript at the same time.
-
       We recommend going through this JavaScript overview to check your knowledge level. It will take you between 30 minutes and an hour but you will feel more confident learning React.
     </h3>
   </div>
@@ -137,7 +116,6 @@ const customerGridImage = (props) => (
     </div>
   </div>
 );
-
 const customerGridStatus = (props) => (
   <div className="flex gap-2 justify-center items-center text-gray-700 capitalize">
     <p style={{ background: props.StatusBg }} className="rounded-full h-3 w-3" />
@@ -152,7 +130,6 @@ export const areaPrimaryXAxis = {
   edgeLabelPlacement: 'Shift',
   labelStyle: { color: 'gray' },
 };
-
 export const areaPrimaryYAxis = {
   labelFormat: '{value}%',
   lineStyle: { width: 0 },
@@ -161,7 +138,6 @@ export const areaPrimaryYAxis = {
   majorTickLines: { width: 0 },
   minorTickLines: { width: 0 },
   labelStyle: { color: 'gray' },
-
 };
 export const barPrimaryXAxis = {
   valueType: 'Category',
@@ -212,7 +188,6 @@ const areaChartData = [
     { x: new Date(2011, 0, 1), y: 2.3 },
   ],
 ];
-
 export const areaCustomSeries = [
   {
     dataSource: areaChartData[0],
@@ -222,7 +197,6 @@ export const areaCustomSeries = [
     opacity: '0.8',
     type: 'SplineArea',
     width: '2',
-
   },
   {
     dataSource: areaChartData[1],
@@ -325,23 +299,19 @@ export const colorMappingData = [
   ['#FFA500'],
   ['#FF4040'],
 ];
-
 export const rangeColorMapping = [
   { label: 'Max 5000',
     start: '1',
     end: '5001',
     colors: colorMappingData[1] },
-
   { label: 'Max 7000',
     start: '5001',
     end: '7000',
     colors: colorMappingData[2] },
-
   { label: '9000 +',
     start: '7000',
     end: '270000',
     colors: colorMappingData[3] },
-
 ];
 
 export const ColorMappingPrimaryXAxis = {
@@ -434,7 +404,6 @@ export const customersGrid = [
     textAlign: 'Center',
     isPrimaryKey: true,
   },
-
 ];
 
 export const employeesGrid = [
@@ -472,7 +441,6 @@ export const employeesGrid = [
     width: '125',
     textAlign: 'Center' },
 ];
-
 export const links = [
   {
     title: 'Dashboard',
@@ -656,7 +624,6 @@ export const earningData = [
     pcColor: 'red-600',
   },
 ];
-
 export const recentTransactions = [
   {
     icon: <BsCurrencyDollar />,
@@ -707,7 +674,6 @@ export const recentTransactions = [
     pcColor: 'red-600',
   },
 ];
-
 export const weeklyStats = [
   {
     icon: <FiShoppingCart />,
@@ -734,7 +700,6 @@ export const weeklyStats = [
     pcColor: 'green-600',
   },
 ];
-
 export const productsPerformance = [
   {
     image:
@@ -773,7 +738,6 @@ export const productsPerformance = [
     earningAmount: '$123,000',
   },
 ];
-
 export const medicalproBranding = {
   data: [
     {
@@ -822,7 +786,6 @@ export const medicalproBranding = {
     },
   ],
 };
-
 export const themeColors = [
   {
     name: 'red-theme',
@@ -849,7 +812,6 @@ export const themeColors = [
     name: 'orange-theme',
   },
 ];
-
 export const userProfileData = [
   {
     icon: <BsCurrencyDollar />,
@@ -873,7 +835,6 @@ export const userProfileData = [
     iconBg: 'rgb(254, 201, 15)',
   },
 ];
-
 export const ordersGrid = [
   {
     headerText: 'Image',
@@ -922,7 +883,6 @@ export const ordersGrid = [
     textAlign: 'Center',
   },
 ];
-
 export const customersData = [
   {
     CustomerID: 1001,
