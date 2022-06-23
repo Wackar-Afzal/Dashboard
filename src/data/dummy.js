@@ -24,6 +24,7 @@ import product4 from './product4.jpg';
 import product5 from './product5.jpg';
 import product6 from './product6.jpg';
 import product7 from './product7.jpg';
+
 export const gridOrderImage = (props) => (
   <div>
     <img
@@ -3054,8 +3055,6 @@ export const SparklineAreaData = [
   { x: 5, yval: 10 },
 
 ];
-
-
 export const lineCustomSeries = [
   { dataSource: lineChartData[0],
     xName: 'x',
@@ -3080,9 +3079,7 @@ export const lineCustomSeries = [
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
-
 ];
-
 export const pieChartData = [
   { x: 'Labour', y: 18, text: '18%' },
   { x: 'Legal', y: 8, text: '8%' },
@@ -3111,7 +3108,6 @@ export const contextMenuItems = [
   'LastPage',
   'NextPage',
 ];
-
 export const ecomPieChartData = [
   { x: '2018', y: 18, text: '35%' },
   { x: '2019', y: 18, text: '15%' },
